@@ -1,0 +1,217 @@
+:root {
+    --colorone: #ffffff;
+    --colortwo: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Italiana", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    
+}
+body {
+    background-image: url(img/mar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#principal2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.321);
+    backdrop-filter: saturate(180%) blur(6px);
+    width: 450px;
+    height: 520px;
+    margin: 60px auto;
+    color: rgba(255, 255, 255, 0.76);
+    flex-direction: column;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    box-shadow: 8px 9px 20px -3px rgba(0, 0, 0, 0.582);
+    animation: dark-to-light 0.9s ease-out;
+}
+#principal2 h3 {
+    margin: 20px 0;
+    font-size: 3rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.644);
+    cursor:default;
+}
+#entrar {
+    height: 46px;
+    width: 12rem;
+    margin-top: 50px;
+    border-radius: 60px;
+    background-image: linear-gradient(180deg, #75C9EB, #75EBBF);
+    border: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.795);
+}
+#principal #login {
+    width: 12rem;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+#principal #senha {
+    width: 12rem;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+}
+i {
+    margin-bottom: 12px;
+    cursor: pointer;
+    margin-top: -32px;
+}
+@keyframes light-to-dark {
+    0% {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.321);
+        backdrop-filter: saturate(180%) blur(6px);
+    }
+    100% {
+        background-color: #00000065;
+        color: rgba(0, 0, 0, 0.725);
+    }
+}
+@keyframes dark-to-light {
+    0% {
+        background-color: #00000065;
+        color: rgba(0, 0, 0, 0.725); 
+    }
+    100% {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.321);
+        backdrop-filter: saturate(180%) blur(6px);
+    }
+}
+#loginesenha {
+    margin-top: 20px;
+}
+img {
+    width: 6rem;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.459);
+    height: 6rem;
+}
+.button_rede {
+    height: 50px;
+    width: 280px;
+    margin:10px;
+    border: none;
+    border-radius: 32px;
+    margin-top: 8px;
+    color: white;
+    background-color: rgba(1, 1, 1, 0.649);
+    backdrop-filter: saturate(100%) blur(40px);
+    
+}
+.button_rede a {
+    text-decoration: none;
+    gap: 20px;
+    color: white;
+    font-weight: 900;
+    font-size: 1.4em;
+    word-spacing: 4px;
+}
+.escuro#principal2 {
+    background-color: #00000065;
+    color: rgba(0, 0, 0, 0.802);
+    animation: light-to-dark 0.9s ease-out;
+}
+.escuro .button_rede a {
+    color: rgba(255, 255, 255, 0.777);
+}
+.escuro .button_rede {
+    border: 0.8px solid rgba(0, 0, 0, 0.777);
+}
+.escuro img {
+    border: 2px solid rgba(22, 22, 22, 0.422);
+}
+.a {
+    background-color: #0b23447b;
+    color: black;
+}
+h4 {
+    font-size: 0.9em;
+    font-weight: 900;
+    color: #000000f1;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    text-align: center;
+
+}
+.fa-moon {
+    background-color: #0000008c;
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-left: 2px;
+}
+.fa-sun {
+    background-color: #0000008c;
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    color: #ffffff;
+    padding-left: 2px;
+}
+.button_rede:hover {
+    background-color: #000000cf;
+    transition: all 2.0s;
+}
+a:hover {
+    color: #a1f8eefd;
+    transition: all 2.0s;
+}
+.dark:hover {
+    color: #a1f8eefd;
+
+}
+.fa-moon:hover {
+    background-color: #000000cf;
+    transition: all 2.0s;
+    color: #ffffff;
+}
+.dark#principal2 h3 {
+    color: white;
+}
+#name, #idade {
+    color: #000000f1;
+    font-size: 0.9em;
+    font-weight: 900;
+}
+.dark#name {
+    color: #757575;
+}
+
+
+
+
